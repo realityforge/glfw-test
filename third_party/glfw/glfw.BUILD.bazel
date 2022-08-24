@@ -100,6 +100,7 @@ DARWIN_SRCS = [
     "src/nsgl_context.m",
 ]
 
+# Note: The documentation indicates CoreVideo rather than CoreFoundation ...
 DARWIN_LINKOPTS = [
     "-framework OpenGL",
     "-framework Cocoa",

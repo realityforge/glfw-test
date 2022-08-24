@@ -159,7 +159,7 @@ objc_library(
     name = "glfw_src_darwin",
     srcs = COMMON_SRCS + DARWIN_SRCS,
     hdrs = COMMON_HDRS + DARWIN_HDRS,
-    copts = ["-fno-objc-arc"],
+    copts = ["-fno-objc-arc", "-Wno-deprecated-declarations"],
     defines = DARWIN_DEFINES,
 )
 

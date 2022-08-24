@@ -1,0 +1,37 @@
+# *nix tool files
+############################
+*.swp
+*~
+
+# OS X files
+############################
+.Spotlight-V100/
+.Trashes/
+._*
+.DS_Store
+Icon\?
+
+# Bazel Build dirs
+############################
+/bazel-*
+/*.bazelrc
+
+# JetBrains IDEs
+############################
+/.clwb/*
+/.ijwb/*
+/.idea
+*.iml
+!**/*.bazelproject
+
+# Created by IntellijJ Antlr plugin and unable to be located to a more sensible location so we just ignore
+/tools/material_magic/java/org/realityforge/q3a/material_magic/model/reader/MaterialsLexer.tokens
+/tools/material_magic/java/org/realityforge/q3a/material_magic/model/reader/gen/Materials*
+
+# Local scripts
+############################
+/l*.sh
+
+# Temp dirs and local notes
+############################
+/tmp

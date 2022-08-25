@@ -24,9 +24,9 @@ http_archive(
     urls = ["https://github.com/glfw/glfw/archive/{}.zip".format(GLFW_VERSION)],
 )
 
-GLA_VERSION = "1.3"
+GLA_VERSION = "1.5"
 
-GLA_SHA256 = "f13d19c6bbc94ce70bea98ebdf89e52d91c6104ba4072f98d7f7bc1bac9c267c"
+GLA_SHA256 = "726729b2938f8747a359c9a3174977e278772d09a39ea43a9d1097bcb5697b71"
 
 http_archive(
     name = "gla",

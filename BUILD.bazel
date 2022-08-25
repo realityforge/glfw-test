@@ -9,3 +9,21 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+load("@gla//:rules.bzl", "gla_lib")
+
+config_setting(
+    name = "debug_compilation_mode",
+    values = {"compilation_mode": "dbg"},
+)
+
+gla_lib(
+    name = "gla",
+    defines = select({
+        ":debug_compilation_mode": ["GLA_SUPPORT_AUTO_CHECK_ERROR_HANDLER"],
+        "//conditions:default": [],
+    }),
+    header_only = False,
+    maximum_profile = "3.2",
+    minimum_profile = "3.2",
+)
